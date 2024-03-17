@@ -1,0 +1,36 @@
+.sec-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    overflow: hidden;
+}
+.sec-2 div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.sec-2 .text-box {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sec-2 .text-box h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 6px;
+    align-self: flex-start;
+}
+.sec-2 .text-box p {
+    opacity: 0.75;
+}
+@media (max-width: 768px) {
+    .sec-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 300px);
+    }
+    .sec-2 div {
+        height: 100%;
+    }
+}
